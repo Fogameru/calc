@@ -12,7 +12,7 @@ public class Converter {
         }
 
         if (isRoman == Boolean.TRUE) {
-            throw new RuntimeException("Ошибка конвертации строки в число!");
+            throw new RuntimeException("\ud83d\udde8\ufe0f " + "Ошибка конвертации строки в число!");
         }
 
         return Integer.valueOf(value);
@@ -21,7 +21,7 @@ public class Converter {
     public String integerToString(Integer value) {
         if (isRoman) {
             if (value <= 0) {
-                throw new RuntimeException("Результат вычисления римских цифр не может быть меньше нуля!");
+                throw new RuntimeException("\ud83d\udde8\ufe0f " + "Результат вычисления римских цифр не может быть меньше нуля!");
             }
 
             return intToRoman(value);

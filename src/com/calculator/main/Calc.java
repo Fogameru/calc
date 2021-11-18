@@ -16,10 +16,10 @@ public class Calc {
                 case "/":
                     return conv.integerToString(oneOp / twoOp);
                 default:
-                    throw new RuntimeException("Неподдерживаемая операция!");
+                    throw new RuntimeException("\ud83d\udde8\ufe0f " + "Неподдерживаемая операция!");
             }
         } else {
-            throw new RuntimeException("Введенное значение превышает допустимое.");
+            throw new RuntimeException("\ud83d\udde8\ufe0f " + "Введенное значение превышает допустимое.");
         }
     }
 }
